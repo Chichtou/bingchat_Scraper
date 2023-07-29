@@ -4,9 +4,9 @@ This Python script interacts with Bing Chat, performs searches using provided qu
 Prerequisites
 Before running the script, you need to install the required libraries. You can install them using the following command:
 
-bash
-Copy code
-pip install gspread oauth2client selenium beautifulsoup4
+
+  `pip install gspread oauth2client selenium beautifulsoup4`
+
 Additionally, you should have the appropriate web driver for Microsoft Edge installed and available in your system's PATH. In this code, we are using the Edge web driver. Make sure to replace it with the appropriate web driver for your browser if you wish to use a different one.
 
 Instructions
@@ -19,20 +19,21 @@ Execute the script.
 Code Explanation
 The script is divided into several functions:
 
-search_bing(query): This function interacts with Bing Chat and performs a search using the provided query. It returns the HTML source of the Bing Chat page after the search.
+-search_bing(query): This function interacts with Bing Chat and performs a search using the provided query. It returns the HTML source of the Bing Chat page after the search.
 
-parse_response(html): This function takes the HTML source of the Bing Chat page as input and extracts the chat responses from it using BeautifulSoup. It returns the scraped responses as a single string.
+-parse_response(html): This function takes the HTML source of the Bing Chat page as input and extracts the chat responses from it using BeautifulSoup. It returns the scraped responses as a single string.
 
-authenticate_google_sheets(): This function authenticates the script with Google Sheets using the "credentials.json" file. It returns the Google Sheets client object.
+-authenticate_google_sheets(): This function authenticates the script with Google Sheets using the "credentials.json" file. It returns the Google Sheets client object.
 
-main(): The main function of the script. It authenticates with Google Sheets, reads search queries from the specified Google Sheet, performs searches on Bing Chat for each query, scrapes the responses, and writes them back to the Google Sheet in the adjacent column.
+-main(): The main function of the script. It authenticates with Google Sheets, reads search queries from the specified Google Sheet, performs searches on Bing Chat for each query, scrapes the responses, and writes them back to the Google Sheet in the adjacent column.
 
 Running the Script
 To run the script, execute it from the command line or through your preferred Python development environment.
 
-bash
-Copy code
-python script_name.py
+
+
+`python script_name.py`
+
 Please replace script_name.py with the actual name of your Python script containing the provided code.
 
 Make sure to wait for the script to finish before checking the Google Sheet for the scraped responses.
