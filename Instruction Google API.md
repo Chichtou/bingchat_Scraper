@@ -1,6 +1,6 @@
 To fill the JSON file with API credentials, you will need to create a service account for Google Sheets and download the credentials in JSON format. Here's a step-by-step guide to do it:
 
-#Step 1: Create a Google Cloud Project and Enable Google Sheets API
+Step 1: Create a Google Cloud Project and Enable Google Sheets API
 Go to the Google Cloud Console and create a new project (or use an existing one).
 
 In the Google Cloud Console, navigate to the "APIs & Services" > "Dashboard."
@@ -11,7 +11,7 @@ Search for "Google Sheets API" and click on it.
 
 Click the "Enable" button to enable the Google Sheets API for your project.
 
-#Step 2: Create a Service Account
+Step 2: Create a Service Account
 In the Google Cloud Console, navigate to the "APIs & Services" > "Credentials."
 
 Click on the "+ CREATE CREDENTIALS" button and choose "Service account."
@@ -28,7 +28,7 @@ Click on the "+ CREATE KEY" button and choose the JSON key type.
 
 Click the "Create" button, and the JSON file containing the credentials will be downloaded to your computer.
 
-#Step 3: Share Google Sheets with the Service Account
+Step 3: Share Google Sheets with the Service Account
 Open the Google Sheets document you want to access with the service account.
 
 Click on the "Share" button in the top right corner.
@@ -37,7 +37,7 @@ Enter the email address of the service account (it can be found in the JSON file
 
 Grant the necessary permissions to the service account (e.g., "Editor" access).
 
-#Step 4: Fill the JSON File in the Project
+Step 4: Fill the JSON File in the Project
 Open the JSON file you downloaded in a text editor.
 
 Copy the entire content of the JSON file, including the curly braces and all the keys and values.
@@ -46,7 +46,7 @@ Create a new file in your project directory (where the Python script is located)
 
 Paste the JSON content into the credentials.json file and save it.
 
-#Step 5: Update the Code
+Step 5: Update the Code
 In the Python script, there is a line that loads the credentials from the JSON file:
 
 
